@@ -21,24 +21,23 @@
   {% endif %}
 </div>
 
-{% if theme.footer.powered %}
-  <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
-#}</div>
-{% endif %}
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-{% if theme.footer.powered and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
-{% endif %}
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
 
-{% if theme.footer.theme.enable %}
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
-  #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
-    #}NexT.{{ theme.scheme }}{#
-  #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
-#}</div>
-{% endif %}
+<span class="post-meta-divider">|</span>
+
+<span id="busuanzi_container_page_pv">
+    文章点击次数:<span id="busuanzi_value_page_pv"></span>
+</span>
+
+<span class="post-meta-divider">|</span>
+
+<span id="busuanzi_container_site_uv">
+    本站浏览量:<span id="busuanzi_value_site_uv"></span>
+</span>
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
